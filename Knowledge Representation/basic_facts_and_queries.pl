@@ -1,4 +1,4 @@
-% 4.Write a prolog program to represent few basic facts and perform queries (Elephant is an animal. Elephant is bigger than horse) etc.
+% 4. Write a prolog program to represent few basic facts and perform queries (Elephant is an animal. Elephant is bigger than horse) etc.
 
 % Facts
 animal(elephant).
