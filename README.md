@@ -1,14 +1,24 @@
 # Artificial Intelligence & Machine Learning Repository
 
-Welcome to this repository! This project contains clean Python implementations of classic Artificial Intelligence (AI) search algorithms, Constraint Satisfaction Problems (CSPs), game-playing heuristics, and fundamental Machine Learning (ML) models.
+Welcome to this repository! This project contains clean implementations of classic Artificial Intelligence (AI) search algorithms, Constraint Satisfaction Problems (CSPs), Knowledge Representation using Prolog, game-playing heuristics, and fundamental Machine Learning (ML) models.
 
-The code is organized into two primary categories: foundational **Problem Solving** techniques and basic **Machine Learning and Neural Networks**.
+The code is organized into three primary categories:
+- **Knowledge Representation**
+- **Problem Solving**
+- **Machine Learning and Neural Networks**
 
 ---
 
 ## 📁 Repository Structure
 
 ```text
+├── 📂 Knowledge Representation
+│   ├── 🐍 basic_facts_and_queries.pl           # Basic Prolog facts and query examples
+│   ├── 🐍 factorial_using_recursion.pl         # Recursive factorial implementation in Prolog
+│   ├── 🐍 min_max_number_finder.pl             # Find minimum and maximum numbers using Prolog rules
+│   ├── 🐍 student_gender_check.pl              # Determine student gender using facts and rules
+│   └── 🐍 student_studys_for_exam_facts.pl     # Student exam knowledge base with logical inference
+│
 ├── 📂 Machine Learning and Neural Network
 │   ├── 🐍 and_or_not_xor_gates.py              # Implementation of basic logic gates using perceptrons
 │   ├── 🐍 complex_back_propagation_algorithm.py # Advanced neural network with backpropagation
@@ -35,8 +45,8 @@ The code is organized into two primary categories: foundational **Problem Solvin
     ├── 🐍 advanced_alpha_beta_pruning.py       # Advanced Alpha-Beta heuristic tree pruning
     ├── 🐍 minimax_algo_with_alpha_beta_pruning.py # Classic Minimax adversarial search tree
     │
-    ├── 🐍 simple_graph_coloring_problem.py    # Basic CSP graph coloring approach
-    ├── 🐍 advanced_graph_coloring_problem.py  # Heuristic-driven graph coloring solution
+    ├── 🐍 simple_graph_coloring_problem.py     # Basic CSP graph coloring approach
+    ├── 🐍 advanced_graph_coloring_problem.py   # Heuristic-driven graph coloring solution
     │
     ├── 🐍 n_queens_problem.py                  # Standard N-Queens puzzle solver
     ├── 🐍 simple_n_queens_problem.py           # Alternative baseline N-Queens approach
@@ -54,36 +64,55 @@ The code is organized into two primary categories: foundational **Problem Solvin
 ## 🚀 Getting Started
 
 ### Prerequisites
-Make sure you have **Python 3.x** installed on your system. 
+Make sure you have **Python 3.x** installed on your system.
+
+For the Prolog programs, install a Prolog interpreter such as **SWI-Prolog**.
 
 ### Installation
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/your-username/your-repository.git
    ```
+
 2. Navigate into the project directory:
    ```bash
    cd your-repo-name
    ```
 
 ### Running the Scripts
-You can execute any of the Python files directly from your terminal. For example, to run the graph coloring problem solver:
+
+#### Python Programs
 ```bash
 python "Problem Solving/simple_graph_coloring_problem.py"
+```
+
+#### Prolog Programs
+Open SWI-Prolog and load a Prolog file:
+
+```prolog
+?- consult('Knowledge Representation/basic_facts_and_queries.pl').
+```
+
+Run queries such as:
+
+```prolog
+?- father(john, X).
 ```
 
 ---
 
 ## 🧠 Algorithmic Concepts Covered
 
-* **Uninformed Search:** Breadth-First Search (BFS), Depth-First Search (DFS), and Uniform Cost Search (UCS).
-* **Informed (Heuristic) Search:** A* Search and Greedy Best-First Search.
-* **Adversarial Search (Game Theory):** Minimax Decision Tree and Alpha-Beta Pruning optimized for Tic-Tac-Toe.
-* **Constraint Satisfaction Problems (CSPs):** Backtracking algorithms for Graph Coloring and the N-Queens Problem.
-* **Intelligent Agents:** Reflex and state-based simulations (Vacuum Cleaner Problem).
-* **Neural Foundations:** Linear classifiers for logic gates (AND, OR, NOT, XOR) and gradient descent via Backpropagation.
+- **Knowledge Representation:** Prolog facts, rules, logical inference, recursion, and query processing.
+- **Uninformed Search:** Breadth-First Search (BFS), Depth-First Search (DFS), and Uniform Cost Search (UCS).
+- **Informed (Heuristic) Search:** A* Search and Greedy Best-First Search.
+- **Adversarial Search (Game Theory):** Minimax Decision Tree and Alpha-Beta Pruning optimized for Tic-Tac-Toe.
+- **Constraint Satisfaction Problems (CSPs):** Backtracking algorithms for Graph Coloring and the N-Queens Problem.
+- **Intelligent Agents:** Reflex and state-based simulations (Vacuum Cleaner Problem).
+- **Neural Foundations:** Linear classifiers for logic gates (AND, OR, NOT, XOR) and gradient descent via Backpropagation.
 
 ---
 
 ## 📝 License
+
 This repository is open-source and available under the [MIT License](LICENSE).
