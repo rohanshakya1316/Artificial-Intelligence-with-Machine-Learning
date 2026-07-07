@@ -1,4 +1,4 @@
-% 3.Find the factorial of number using recursion in Prolog
+% 3. Find the factorial of number using recursion in Prolog
 
 % Base case
 factorial(0, 1).
